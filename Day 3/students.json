@@ -1,0 +1,20 @@
+[
+  {
+    "student_roll": 1,
+    "student_name": "John Doe",
+    "student_class": "10th",
+    "student_section": "A"
+  },
+  {
+    "student_roll": 2,
+    "student_name": "Jane Smith",
+    "student_class": "10th",
+    "student_section": "B"
+  },
+  {
+    "student_roll": 3,
+    "student_name": "Bob Johnson",
+    "student_class": "10th",
+    "student_section": "C"
+  }
+]
