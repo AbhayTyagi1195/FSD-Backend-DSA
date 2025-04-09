@@ -9,11 +9,18 @@ app.use(express.json());
 connectDB();
 app.post("/user",async (req, res) => {
     try{
-       await User.create(req.body);
+       await User.create(req.body, (err, user) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).json({ error: 'Error creating user' });
+            }
+            console.log(user);
+            return res.status(201).json({ user });
+       });
          res.status(201).json({"user":user});
     }catch(error){
-        res.status(500).json({"message":"Error User Creation!"});
-
+        console.error(error);
+        res.status(500).json({ error: 'Internal server error' });
     }
 })
 const PORT = process.env.PORT;
