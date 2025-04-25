@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #AFDDE5; /* Soft sky blue */
+  color: #003135; /* Dark teal */
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #024950; /* Deep turquoise */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #FFF; /* White */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #0FA4AF; /* Bright cyan-teal */
+}
+
+nav a.active {
+  background-color: #964734; /* Warm reddish-brown */
+}
+
+/* Main Content */
+div {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+h1, h2 {
+  color: #003135; /* Dark teal */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFF; /* White */
+  border: 1px solid #DDD; /* Light Gray Border */
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #CCC; /* Light Gray Border */
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #024950; /* Deep turquoise */
+  color: #FFF; /* White */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0FA4AF; /* Bright cyan-teal */
+}
+
+/* Table Styles */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: #FFF; /* White */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid #DDD; /* Light Gray Border */
+  padding: 15px;
+}
+
+table th {
+  background-color: #024950; /* Deep turquoise */
+  color: #FFF; /* White */
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #AFDDE5; /* Soft sky blue */
+}
+
+table tr:hover {
+  background-color: #0FA4AF; /* Bright cyan-teal */
+}
+
+/* Button Styles */
+button {
+  background-color: #024950; /* Deep turquoise */
+  color: #FFF; /* White */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0FA4AF; /* Bright cyan-teal */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #024950; /* Deep turquoise */
+  color: #FFF; /* White */
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
