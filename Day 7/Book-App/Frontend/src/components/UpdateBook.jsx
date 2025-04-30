@@ -12,7 +12,7 @@ const UpdateBook = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get('http://localhost:9000/books');
+      const res = await axios.get('https://fsd-backend-dsa-2-ca7m.onrender.com/books');
       setBooks(res.data);
     } catch (error) {
       console.error(error);
@@ -29,7 +29,7 @@ const UpdateBook = () => {
     if (!selectedBook) return;
 
     try {
-      await axios.put(`http://localhost:9000/books/${selectedBook._id}`, updatedData);
+      await axios.put(`https://fsd-backend-dsa-2-ca7m.onrender.com/books/${selectedBook._id}`, updatedData);
       alert('Book updated successfully');
       setSelectedBook(null);
       setUpdatedData({ title: '', author: '', date: '', image: '' });
