@@ -24,6 +24,9 @@ const App = () => {
                     <Route path="/update" element={<UpdateBook/>}/>
                     <Route path="/delete" element={<DeleteBook/>}/>
                 </Routes>
+                <footer>
+                    <p>Abhay Tyagi | CSE-(DS)-A | 2200321540004</p>
+            </footer>
             </Router>
         </div>
     )
